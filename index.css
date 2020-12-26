@@ -1,0 +1,42 @@
+body{
+  background-color: rgb(137, 104, 255);
+}
+
+h1{
+  color: red;
+  cursor: pointer;
+  transition: color 1s ease-in-out;
+}
+
+
+.clicked{
+  color:rgb(138, 43, 226);
+}
+
+.form,
+.greetings {
+  display : none;
+}
+
+.showing {
+  display : block;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.bgImage{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
