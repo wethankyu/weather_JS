@@ -48,11 +48,10 @@ function paintToDo(_array) {
   li.id = newId;
   li.appendChild(span);
   li.appendChild(delBtn);
-  // li.appendChild(span2);
+  li.appendChild(span2);
 
   toDoObj = {};
   if (todayDate !== savedDate) { // 오늘 날짜가 리스트 날짜와 다를때
-    li.appendChild(span2);
     toDoListBefore.appendChild(li);
     toDoObj = {
       text: _array.text,

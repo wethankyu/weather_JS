@@ -13,6 +13,7 @@ function getTime() {
 
 function handleClick() {
   clockTitle.classList.toggle(CLICKED);
+  clockTitle.innerText = `I love you, ${USER_NAME} 💓`;
 }
 
 function init() {
